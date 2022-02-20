@@ -1,0 +1,10 @@
+{%  extends 'base.html' %}
+{% block zawartosc %}
+
+
+    {% for i in authors %}
+        <li><a href="{{ author.get_absolute_url }}">{{ i.first_name }} {{ i.last_name }}</a></li>
+    {% endfor %}
+
+
+{% endblock %}
